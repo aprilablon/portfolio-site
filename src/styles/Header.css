@@ -1,0 +1,17 @@
+.header {
+  padding: 20px 0px 20px 0px;
+  margin: 0px 20px 0px 20px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+}
+
+#home {
+  text-align: left;
+}
+
+#nav {
+  text-align: right;
+}
