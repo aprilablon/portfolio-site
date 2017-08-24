@@ -9,6 +9,10 @@
   color: #000;
 }
 
+.link:hover {
+  color: #E91E63;
+}
+
 .nav-link {
   display: inline-block;
   padding: 0px 15px 0px 15px;
