@@ -4,6 +4,10 @@ img {
   object-fit: cover;
 }
 
+img:hover {
+  opacity: 0.2;
+}
+
 #projects {
   padding: 0px 40px 40px 40px;
 }
