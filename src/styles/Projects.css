@@ -4,14 +4,43 @@ img {
   object-fit: cover;
 }
 
-img:hover {
-  opacity: 0.2;
-}
-
 #projects {
   padding: 0px 40px 40px 40px;
 }
 
 .project-panel {
   padding: 10px;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  color: #000;
+  visibility: hidden;
+  opacity: 0;
+  margin: 0px;
+  padding: 10px;
+  padding-top: 25%;
+  text-align: center;
+  transition: opacity .2s, visibility .2s;
+}
+
+.app-description {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 20px;
+}
+
+.app-title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+}
+
+.project-panel:hover .text {
+  visibility: visible;
+  opacity: 0.8;
 }
