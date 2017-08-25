@@ -11,7 +11,7 @@ class Projects extends React.Component {
             <p className="text">
               <span className="app-title">Bandwith</span>
               <br/>
-              <span className="app-description">find, connect, and jam with local musicians.</span>
+              <span className="app-description">Find, connect, and jam with local musicians.</span>
             </p>
           </div>
           <div className="col-xs-12 col-sm-6 project-panel">
@@ -19,7 +19,7 @@ class Projects extends React.Component {
             <p className="text">
               <span className="app-title">Fridgr</span>
               <br/>
-              <span className="app-description">tracking groceries got you stressed? chill.</span>
+              <span className="app-description">Tracking groceries got you stressed? Chill.</span>
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@ class Projects extends React.Component {
             <p className="text">
               <span className="app-title">Tribal</span>
               <br/>
-              <span className="app-description">add songs with your friends. vote. start the party!</span>
+              <span className="app-description">Add songs with your friends. Vote. Start the party!</span>
             </p>
           </div>
           <div className="col-xs-12 col-sm-6 project-panel">
@@ -37,7 +37,7 @@ class Projects extends React.Component {
             <p className="text">
               <span className="app-title">Rocket Launch Watch</span>
               <br/>
-              <span className="app-description">count down to the next rocket launch.</span>
+              <span className="app-description">Count down to the next rocket launch.</span>
             </p>
           </div>
         </div>
