@@ -7,7 +7,7 @@ class About extends React.Component {
       <div id="about">
         <div className="row">
           <div className="col-xs-12 col-sm-8 col-sm-offset-2">
-            Hi! I'm April. An aerospace engineer turned full-stack software engineer. 
+            Hi! I'm April. An aerospace engineer turned full-stack software developer. 
           </div>
         </div>
         <div className="row">
