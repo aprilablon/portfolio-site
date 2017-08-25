@@ -4,13 +4,24 @@ img {
   object-fit: cover;
 }
 
-#projects {
-  padding: 0px 40px 40px 40px;
+.app-description {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+}
+
+.app-title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
 }
 
 .project-panel {
   padding: 10px;
   position: relative;
+}
+
+.project-panel:hover .text {
+  visibility: visible;
+  opacity: 0.8;
 }
 
 .text {
@@ -30,17 +41,6 @@ img {
   transition: opacity .2s, visibility .2s;
 }
 
-.app-description {
-  font-family: 'Patrick Hand SC', cursive;
-  font-size: 20px;
-}
-
-.app-title {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 30px;
-}
-
-.project-panel:hover .text {
-  visibility: visible;
-  opacity: 0.8;
+#projects {
+  padding: 0px 40px 40px 40px;
 }
