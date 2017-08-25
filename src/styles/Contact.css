@@ -1,15 +1,81 @@
-#contact {
-  padding: 0px 40px 40px 40px;
-  text-align: center;
+button {
+  width: 20%;
+  height: 40px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  color: #000;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
 }
- 
-.icon {
-  height: 15px;
-  width: 15px;
-  padding: 0px 2px 0px 2px;
+
+button:hover {
+  border: 2px solid #E91E63;
+  color: #E91E63;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-top: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #E91E63;
+}
+
+textarea {
+  width: 100%;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+  margin-top: 15px;
+  border: none;
+}
+
+textarea {
+  outline: none;
+}
+
+.button-row {
   text-align: center;
 }
 
-.social {
+.connect-row {
+  padding-left: 46%;
+  padding-bottom: 30px;
+}
+
+.contact-title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
   text-align: center;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+  padding: 0px 5px 0px 5px;
+}
+
+.subtitle {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+  margin: 0px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+.social {
+  /* text-align: center; */
+}
+
+#contact {
+  padding: 0px 40px 40px 40px;
+  /* text-align: center; */
 }
