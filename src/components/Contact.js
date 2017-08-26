@@ -33,7 +33,7 @@ class Contact extends React.Component {
     //     })
     // });
     
-    // // send some mail
+    // send some mail
     // transporter.sendMail({
     //     from: 'sender@example.com',
     //     to: 'ablonapril@gmail.com',
@@ -65,10 +65,10 @@ class Contact extends React.Component {
         <div className="row connect-row">
           <div className="social">
             <p className="subtitle">Connect: </p>
-            <a target="_blank" href="https://www.linkedin.com/in/aprilablon">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/aprilablon">
               <img className="icon" alt="linkedin.com/in/aprilablon" src="/assets/linkedin.svg" />
             </a>
-            <a target="_blank" href="https://twitter.com/aprilablon">
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/aprilablon">
               <img className="icon" alt="@aprilablon" src="/assets/twitter.png"/>
             </a>
           </div>
