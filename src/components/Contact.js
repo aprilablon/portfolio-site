@@ -1,6 +1,11 @@
 import React from 'react';
-// import { Email } from 'email';
+import nodemailer from 'nodemailer';
 import '../styles/Contact.css';
+import aws from'aws-sdk';
+
+// not going to work on the frontend 
+// need to create back end
+aws.config.loadFromPath('config.json');
 
 class Contact extends React.Component {
   constructor(props) {
@@ -13,21 +18,38 @@ class Contact extends React.Component {
       subject: '',
       message: ''
     };
-
+    
     this.sendEmail = this.sendEmail.bind(this);
     this.registerInput = this.registerInput.bind(this);
   }
   
   sendEmail() {
     console.log('button click: ', this.state);
-    // let message = new Email({
-    //   from: "ablonapril@gmail.com",
-    //   to:   "ablonapril@gmail.com",
-    //   subject: "Knock knock...",
-    //   body: "Who's there?"
-    // });
     
-    // message.send((err) => {console.log('Email did not send: ', err)});
+    // create Nodemailer SES transporter
+    let transporter = nodemailer.createTransport({
+        SES: new aws.SES({
+            apiVersion: '2010-12-01'
+        })
+    });
+    
+    // send some mail
+    transporter.sendMail({
+        from: 'sender@example.com',
+        to: 'ablonapril@gmail.com',
+        subject: 'Message',
+        text: 'I hope this message gets sent!',
+        ses: { // optional extra arguments for SendRawEmail
+            Tags: [{
+                Name: 'tag name',
+                Value: 'tag value'
+            }]
+        }
+    }, (err, info) => {
+        console.log('did not work');
+        console.log(info.envelope);
+        console.log(info.messageId);
+    });
   }
 
   registerInput(event) {
