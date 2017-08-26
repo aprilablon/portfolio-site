@@ -41,6 +41,11 @@ img {
   transition: opacity .2s, visibility .2s;
 }
 
+.text:hover {
+  text-decoration: none;
+  color: #000;
+}
+
 #projects {
   padding: 0px 40px 40px 40px;
 }
