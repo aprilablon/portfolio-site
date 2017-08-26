@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Projects.css'
 
 class Projects extends React.Component {
@@ -8,11 +9,11 @@ class Projects extends React.Component {
         <div className="row">
           <div className="col-xs-12 col-sm-6 project-panel">
             <img alt="bandwith-app" src="/assets/bandwith-mocks/bandwithmock_home.jpeg" />
-            <p className="text">
+            <Link to="/Bandwith" className="text">
               <span className="app-title">Bandwith</span>
               <br/>
               <span className="app-description">Find, connect, and jam with local musicians.</span>
-            </p>
+            </Link>
           </div>
           <div className="col-xs-12 col-sm-6 project-panel">
             <img alt="fridgr-app" src="/assets/fridgr-mocks/fridgrmock_inventory1.jpeg" />
