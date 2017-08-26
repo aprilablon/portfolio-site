@@ -1,0 +1,10 @@
+img {
+  max-height: 850px;
+  width: 100%;
+  object-fit: cover;
+  /* padding-bottom: 20px; */
+}
+
+#bandwith-app {
+  padding: 20px 20px 0px 20px;
+}
