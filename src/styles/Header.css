@@ -1,16 +1,26 @@
+.brand-text {
+  padding-left: 30px;
+}
+
 .header {
-  /* padding: 20px 0px 20px 0px;
-  margin: 0px 20px 0px 20px; */
+  padding: 20px 0px 20px 0px;
+  margin: 0px 20px 0px 20px;
 }
 
 .link {
+  color: #000;
   font-family: 'Permanent Marker', cursive;
   text-decoration: none;
+}
+
+.link:visited {
   color: #000;
+  text-decoration: none;
 }
 
 .link:hover {
   color: #E91E63;
+  text-decoration: none;
 }
 
 .nav-link {
@@ -19,15 +29,17 @@
 }
 
 .small-center {
-  text-align: center;
+  /* text-align: center; */
 }
 
 #home {
   font-size: 30px;
+  text-align: left;
 }
 
 #nav {
   font-size: 20px;
+  text-align: right;
 }
 
 #title {
