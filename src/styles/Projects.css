@@ -38,6 +38,7 @@ img {
   padding: 10px;
   padding-top: 25%;
   text-align: center;
+  text-decoration: none;
   transition: opacity .2s, visibility .2s;
 }
 
