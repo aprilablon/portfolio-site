@@ -17,29 +17,29 @@ class Projects extends React.Component {
           </div>
           <div className="col-xs-12 col-sm-6 project-panel">
             <img alt="fridgr-app" src="/assets/fridgr-mocks/fridgrmock_inventory1.jpeg" />
-            <p className="text">
+            <Link to="/Fridgr" className="text">
               <span className="app-title">Fridgr</span>
               <br/>
               <span className="app-description">Tracking groceries got you stressed? Chill.</span>
-            </p>
+            </Link>
           </div>
         </div>
         <div className="row">
           <div className="col-xs-12 col-sm-6 project-panel">
             <img alt="tribal-app" src="/assets/tribal-mocks/tribalmock_play1.jpeg" />
-            <p className="text">
+            <Link to="/Tribal" className="text">
               <span className="app-title">Tribal</span>
               <br/>
               <span className="app-description">Add songs with your friends. Vote. Start the party!</span>
-            </p>
+            </Link>
           </div>
           <div className="col-xs-12 col-sm-6 project-panel">
             <img alt="rocket-app" src="/assets/rocket-mocks/rocketmock_past.jpeg" />
-            <p className="text">
+            <Link to="/Rocket" className="text">
               <span className="app-title">Rocket Launch Watch</span>
               <br/>
               <span className="app-description">Count down to the next rocket launch.</span>
-            </p>
+            </Link>
           </div>
         </div>
       </div>
