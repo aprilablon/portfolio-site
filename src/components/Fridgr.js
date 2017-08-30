@@ -54,8 +54,12 @@ class Fridgr extends React.Component {
       return;
     }
     let nextPanelValue = this.state.panel - 1;
+    let styleUpdate = new Array(4);
+    styleUpdate.fill({ backgroundColor: inactive });
+    styleUpdate[nextPanelValue] = { backgroundColor: active };
     this.setState({
-      panel: nextPanelValue
+      panel: nextPanelValue,
+      dotStatus: styleUpdate
     });
   }
 
@@ -64,8 +68,12 @@ class Fridgr extends React.Component {
       return;
     }
     let nextPanelValue = this.state.panel + 1;
+    let styleUpdate = new Array(4);
+    styleUpdate.fill({ backgroundColor: inactive });
+    styleUpdate[nextPanelValue] = { backgroundColor: active };
     this.setState({
-      panel: nextPanelValue
+      panel: nextPanelValue,
+      dotStatus: styleUpdate
     });
   }
 
