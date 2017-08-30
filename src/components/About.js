@@ -6,6 +6,9 @@ class About extends React.Component {
     return (
       <div id="about">
         <div className="row">
+          <div id="profile-pic"/>
+        </div>
+        <div className="row">
           <div className="col-xs-12 col-sm-8 col-sm-offset-2">
             Hi! I'm April. An aerospace engineer turned full-stack software developer. 
           </div>
