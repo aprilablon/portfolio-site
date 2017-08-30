@@ -1,7 +1,17 @@
 #about {
   font-family: 'Roboto Mono', monospace;
-  font-size: 25px;
-  line-height: 50px;
+  font-size: 20px;
+  line-height: 40px;
   padding: 20px 20px 20px 20px;
   text-align: center;
+}
+
+#profile-pic {
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+  background-image: url("/assets/profile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
