@@ -5,6 +5,9 @@ import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
 import Bandwith from './Bandwith';
+import Fridgr from './Fridgr';
+import Tribal from './Tribal';
+import Rocket from './Rocket';
 
 class App extends React.Component {
   render() {
@@ -17,6 +20,9 @@ class App extends React.Component {
             <Route path="/About" component={About} />
             <Route path="/Contact" component={Contact} />
             <Route path="/Bandwith" component={Bandwith} />
+            <Route path="/Fridgr" component={Fridgr} />
+            <Route path="/Tribal" component={Tribal} />
+            <Route path="/Rocket" component={Rocket} />
           </div>
         </Router>
       </div>
