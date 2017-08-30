@@ -54,13 +54,7 @@ class Tribal extends React.Component {
       return;
     }
     let nextPanelValue = this.state.panel - 1;
-    let styleUpdate = new Array(4);
-    styleUpdate.fill({ backgroundColor: inactive });
-    styleUpdate[nextPanelValue] = { backgroundColor: active };
-    this.setState({
-      panel: nextPanelValue,
-      dotStatus: styleUpdate
-    });
+    this.selectPanel(nextPanelValue);
   }
 
   clickNext() {
@@ -68,13 +62,7 @@ class Tribal extends React.Component {
       return;
     }
     let nextPanelValue = this.state.panel + 1;
-    let styleUpdate = new Array(4);
-    styleUpdate.fill({ backgroundColor: inactive });
-    styleUpdate[nextPanelValue] = { backgroundColor: active };
-    this.setState({
-      panel: nextPanelValue,
-      dotStatus: styleUpdate
-    });
+    this.selectPanel(nextPanelValue);
   }
 
   selectPanel(panelNumber) {

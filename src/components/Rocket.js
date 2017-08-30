@@ -53,26 +53,16 @@ class Rocket extends React.Component {
     if (this.state.panel === this.state.min) {
       return;
     }
-    let nextPanelValue = this.state.panel - 1;let styleUpdate = new Array(4);
-    styleUpdate.fill({ backgroundColor: inactive });
-    styleUpdate[nextPanelValue] = { backgroundColor: active };
-    this.setState({
-      panel: nextPanelValue,
-      dotStatus: styleUpdate
-    });
+    let nextPanelValue = this.state.panel - 1;
+    this.selectPanel(nextPanelValue);
   }
 
   clickNext() {
     if (this.state.panel === this.state.max) {
       return;
     }
-    let nextPanelValue = this.state.panel + 1;let styleUpdate = new Array(4);
-    styleUpdate.fill({ backgroundColor: inactive });
-    styleUpdate[nextPanelValue] = { backgroundColor: active };
-    this.setState({
-      panel: nextPanelValue,
-      dotStatus: styleUpdate
-    });
+    let nextPanelValue = this.state.panel + 1;
+    this.selectPanel(nextPanelValue);
   }
 
   selectPanel(panelNumber) {
