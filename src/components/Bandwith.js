@@ -1,5 +1,8 @@
 import React from 'react';
-import '../styles/Bandwith.css';
+import '../styles/Project.css';
+
+const active = '#E91E63';
+const inactive = '#FFB0CA';
 
 class Bandwith extends React.Component {
   constructor(props) {
@@ -32,11 +35,18 @@ class Bandwith extends React.Component {
         'bandwith-profile',
         'bandwith-matches',
         'bandwith-chat'
+      ],
+      dotStatus: [
+        { backgroundColor: active },
+        { backgroundColor: inactive },
+        { backgroundColor: inactive },
+        { backgroundColor: inactive }
       ]
     };
 
     this.clickPrevious = this.clickPrevious.bind(this);
     this.clickNext = this.clickNext.bind(this);
+    this.selectPanel = this.selectPanel.bind(this);
   }
 
   clickPrevious() {
@@ -59,9 +69,19 @@ class Bandwith extends React.Component {
     });
   }
 
+  selectPanel(panelNumber) {
+    let styleUpdate = new Array(4);
+    styleUpdate.fill({ backgroundColor: inactive });
+    styleUpdate[panelNumber] = { backgroundColor: active };
+    this.setState({
+      panel: panelNumber,
+      dotStatus: styleUpdate
+    });
+  }
+
   render() {
     return (
-      <div id="bandwith-app">
+      <div id="project-page">
         <div>
           <p id="app-header">Bandwith</p>
         </div>
@@ -75,6 +95,12 @@ class Bandwith extends React.Component {
             <img className="icon" alt="github.com/hr-celtics/bandwith" src="/assets/github.png" />
             <p className="github-address">github.com/hr-celtics/bandwith</p>
           </a>
+        </div>
+        <div id="nav-dots">
+          <div style={this.state.dotStatus[0]} onClick={() => this.selectPanel(0)} className="dot"></div>
+          <div style={this.state.dotStatus[1]} onClick={() => this.selectPanel(1)} className="dot"></div>
+          <div style={this.state.dotStatus[2]} onClick={() => this.selectPanel(2)} className="dot"></div>
+          <div style={this.state.dotStatus[3]} onClick={() => this.selectPanel(3)} className="dot"></div>
         </div>
         <div className="row">
           <div className="col-xs-12 col-sm-6" onClick={this.clickPrevious}>
